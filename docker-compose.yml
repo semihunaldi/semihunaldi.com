@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  apache2:
+    hostname: apache2
+    restart: always
+    build:
+      context: .
+    image : apache2
+    ports:
+    - "443:443"
+    - "80:80"
